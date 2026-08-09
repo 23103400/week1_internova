@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Portal</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>Student Information Portal</h1>
+
+        <p>
+            Welcome to our student information portal.
+        </p>
+
+    </header>
+
+    <hr>
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <a href="#home">Home</a> |
+        <a href="#about">About</a> |
+        <a href="#courses">Courses</a> |
+        <a href="#students">Students</a> |
+        <a href="#registration">Registration</a> |
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+    <hr>
+
+    <!-- Main Content -->
+
+    <main>
+
+        <!-- Home Section -->
+
+        <section id="home">
+
+            <h2>Welcome</h2>
+
+            <img src="images/college.jpg"
+                 alt="College Campus"
+                 width="500">
+
+            <p>
+                Welcome to the <b>Student Information Portal</b>.
+                This website provides information about our college,
+                courses and student registration.
+            </p>
+
+            <p>
+                Our goal is to provide students with useful information
+                about their academic journey.
+            </p>
+
+        </section>
+
+        <hr>
+
+        <!-- About Section -->
+
+        <section id="about">
+
+            <h2>About Our College</h2>
+
+            <article>
+
+                <h3>Our Mission</h3>
+
+                <p>
+                    Our mission is to provide quality education and
+                    encourage students to develop technical and
+                    professional skills.
+                </p>
+
+            </article>
+
+            <article>
+
+                <h3>Why Choose Us?</h3>
+
+                <ul>
+                    <li>Experienced Faculty</li>
+                    <li>Modern Laboratories</li>
+                    <li>Industry-Oriented Courses</li>
+                    <li>Student Development Programs</li>
+                </ul>
+
+            </article>
+
+        </section>
+
+        <hr>
+
+        <!-- Courses Section -->
+
+        <section id="courses">
+
+            <h2>Available Courses</h2>
+
+            <ol>
+
+                <li>
+                    Computer Science
+                    <ul>
+                        <li>Programming</li>
+                        <li>Data Structures</li>
+                        <li>Artificial Intelligence</li>
+                    </ul>
+                </li>
+
+                <li>
+                    Information Technology
+                    <ul>
+                        <li>Database Management</li>
+                        <li>Web Development</li>
+                        <li>Cloud Computing</li>
+                    </ul>
+                </li>
+
+                <li>
+                    Electronics
+                    <ul>
+                        <li>Digital Electronics</li>
+                        <li>Microprocessors</li>
+                        <li>Communication Systems</li>
+                    </ul>
+                </li>
+
+            </ol>
+
+        </section>
+
+        <hr>
+
+        <!-- Student Table -->
+
+        <section id="students">
+
+            <h2>Student Information</h2>
+
+            <table border="1">
+
+                <tr>
+                    <th>Roll No.</th>
+                    <th>Name</th>
+                    <th>Course</th>
+                    <th>Year</th>
+                    <th>CGPA</th>
+                </tr>
+
+                <tr>
+                    <td>101</td>
+                    <td>Rahul Sharma</td>
+                    <td>Computer Science</td>
+                    <td>4</td>
+                    <td>8.7</td>
+                </tr>
+
+                <tr>
+                    <td>102</td>
+                    <td>Ananya Singh</td>
+                    <td>Information Technology</td>
+                    <td>3</td>
+                    <td>9.1</td>
+                </tr>
+
+                <tr>
+                    <td>103</td>
+                    <td>Rohan Verma</td>
+                    <td>Computer Science</td>
+                    <td>4</td>
+                    <td>8.5</td>
+                </tr>
+
+                <tr>
+                    <td>104</td>
+                    <td>Priya Gupta</td>
+                    <td>Electronics</td>
+                    <td>2</td>
+                    <td>8.9</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+        <hr>
+
+        <!-- Registration Form -->
+
+        <section id="registration">
+
+            <h2>Student Registration</h2>
+
+            <form action="#" method="post">
+
+                <label for="name">Full Name:</label>
+
+                <input type="text"
+                       id="name"
+                       name="name"
+                       required>
+
+                <br><br>
+
+                <label for="email">Email:</label>
+
+                <input type="email"
+                       id="email"
+                       name="email"
+                       required>
+
+                <br><br>
+
+                <label for="phone">Phone:</label>
+
+                <input type="tel"
+                       id="phone"
+                       name="phone"
+                       pattern="[0-9]{10}"
+                       required>
+
+                <br><br>
+
+                <label>Gender:</label>
+
+                <input type="radio"
+                       id="male"
+                       name="gender"
+                       value="male">
+
+                <label for="male">Male</label>
+
+                <input type="radio"
+                       id="female"
+                       name="gender"
+                       value="female">
+
+                <label for="female">Female</label>
+
+                <input type="radio"
+                       id="other"
+                       name="gender"
+                       value="other">
+
+                <label for="other">Other</label>
+
+                <br><br>
+
+                <label for="dob">Date of Birth:</label>
+
+                <input type="date"
+                       id="dob"
+                       name="dob">
+
+                <br><br>
+
+                <label for="course">Select Course:</label>
+
+                <select id="course" name="course">
+
+                    <option value="">-- Select Course --</option>
+
+                    <option value="computer-science">
+                        Computer Science
+                    </option>
+
+                    <option value="information-technology">
+                        Information Technology
+                    </option>
+
+                    <option value="electronics">
+                        Electronics
+                    </option>
+
+                </select>
+
+                <br><br>
+
+                <label for="address">Address:</label>
+
+                <br>
+
+                <textarea id="address"
+                          name="address"
+                          rows="5"
+                          cols="40"
+                          placeholder="Enter your address"></textarea>
+
+                <br><br>
+
+                <p>Areas of Interest:</p>
+
+                <input type="checkbox"
+                       id="programming"
+                       name="interest"
+                       value="programming">
+
+                <label for="programming">
+                    Programming
+                </label>
+
+                <br>
+
+                <input type="checkbox"
+                       id="ai"
+                       name="interest"
+                       value="ai">
+
+                <label for="ai">
+                    Artificial Intelligence
+                </label>
+
+                <br>
+
+                <input type="checkbox"
+                       id="web"
+                       name="interest"
+                       value="web">
+
+                <label for="web">
+                    Web Development
+                </label>
+
+                <br>
+
+                <input type="checkbox"
+                       id="data"
+                       name="interest"
+                       value="data-science">
+
+                <label for="data">
+                    Data Science
+                </label>
+
+                <br><br>
+
+                <input type="submit" value="Register">
+
+                <input type="reset" value="Reset">
+
+            </form>
+
+        </section>
+
+        <hr>
+
+        <!-- Links -->
+
+        <section>
+
+            <h2>Useful Links</h2>
+
+            <p>
+                Visit our
+                <a href="https://www.google.com" target="_blank">
+                    Google
+                </a>
+                search page.
+            </p>
+
+            <p>
+                Visit
+                <a href="https://www.wikipedia.org" target="_blank">
+                    Wikipedia
+                </a>
+                to learn more.
+            </p>
+
+        </section>
+
+        <hr>
+
+        <!-- Contact -->
+
+        <section id="contact">
+
+            <h2>Contact Us</h2>
+
+            <article>
+
+                <h3>College Office</h3>
+
+                <p>
+                    Email: college@example.com
+                </p>
+
+                <p>
+                    Phone: 9876543210
+                </p>
+
+                <p>
+                    Address: University Road, New Delhi, India
+                </p>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 Student Information Portal.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
